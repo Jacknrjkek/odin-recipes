@@ -4,16 +4,51 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Odin Recipes</title>
+		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
-		<h1>Odin Recipes</h1>
-		<ul>
-			<li><a href="recipes/gyudon.html">Gyudon</a></li>
-			<li><a href="recipes/japanese_curry.html">Japanese Curry</a></li>
-			<li><a href="recipes/karaage.html">Karaage</a></li>
-			<li><a href="recipes/okonomiyaki.html">Okonomiyaki</a></li>
-		</ul>
+		<header>
+			<h1>&#8203;<del> ODIN </del>&#8203; WAIFU RECIPES &#8203;</h1>
+		</header>
 
-		<img src="./images/yummy.jpg" />
+		<div class="menu">
+			<div class="menu-item">
+				<a href="recipes/gyudon.html">
+					<img src="images/gyudon.jpg" alt="Gyudon" />
+					<p>Gyudon</p>
+				</a>
+			</div>
+			<div class="menu-item">
+				<a href="recipes/japanese_curry.html">
+					<img src="images/japanesebeefcurry.jpg" alt="Japanese Curry" />
+					<p>Japanese Curry</p>
+				</a>
+			</div>
+			<div class="menu-item">
+				<a href="recipes/karaage.html">
+					<img src="images/karaage.jpg" alt="Karaage" />
+					<p>Karaage</p>
+				</a>
+			</div>
+			<div class="menu-item">
+				<a href="recipes/okonomiyaki.html">
+					<img src="images/okonomiyaki.jpg" alt="Okonomiyaki" />
+					<p>Okonomiyaki</p>
+				</a>
+			</div>
+		</div>
+
+		<img src="./images/yummy.jpg" alt="A Very Yummy Waifu" class="yummywaifu" />
 	</body>
+	<footer>
+		<audio id="rainAudio" controls autoplay>
+			<source src="audios/rain.mp3" type="audio/mpeg" />
+			Your browser does not support the audio element.
+		</audio>
+	</footer>
+
+	<script>
+		const audioElement = document.getElementById("rainAudio");
+		audioElement.volume = 0.02;
+	</script>
 </html>
